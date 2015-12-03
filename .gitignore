@@ -1,0 +1,15 @@
+#Magento
+.htaccess
+.directory
+sitemap.xml
+robots.txt
+
+.idea/**
+media/**
+includes/src/**
+includes/config.php
+downloader/**
+var/**
+
+app/etc/local.xml
+.phpstorm.meta.php
