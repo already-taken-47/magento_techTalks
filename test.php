@@ -19,4 +19,3 @@ var_dump($cat->getChildren());
 // helper rewriting
 $customer_data = Mage::Helper('customer/data');
 var_dump($customer_data->getCustomerName());
-

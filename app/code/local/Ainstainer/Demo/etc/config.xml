@@ -16,5 +16,16 @@
                 <class>Ainstainer_Demo_Helper</class>
             </demo>
         </helpers>
+        <events>
+            <customel_login>
+                <observers>
+                    <demo>
+                        <type>model</type>
+                        <class>demo/observer</class>
+                        <method>logCustomer</method>
+                    </demo>
+                </observers>
+            </customel_login>
+        </events>
     </global>
 </config>
