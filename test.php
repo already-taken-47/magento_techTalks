@@ -3,19 +3,17 @@ require_once 'app/Mage.php';
 
 Mage::app();
 
-// new demo model
-$product = Mage::getModel('demo/product');
-$product->sayHello();
+$products = Mage::getModel('catalog/product')->getCollection()
+            ->addAttributeToSelect( array('name', 'price') )
+            ->addFieldToFilter( 'price', array( 'lt' => 550 ) );
+//echo $product->getDescription();
+foreach($products as $product) {
+    var_dump( $product->getName() );
+    var_dump( $product->getPrice() );
+}
+//echo $product->getData('url_key');
+//echo $product->getUrlKey();
+//echo $product->getDescription();
+//$product->setData('meta_title', 'updated')->save();
 
-// new demo helper
-$helper = Mage::Helper('demo/customer');
-Mage::Helper('demo')->sayWhat();
-$helper->sayHi();
-
-// model rewriting
-$cat = Mage::getModel('catalog/category')->load(3);
-var_dump($cat->getChildren());
-
-// helper rewriting
-$customer_data = Mage::Helper('customer/data');
-var_dump($customer_data->getCustomerName());
+//echo $product->delete();
