@@ -28,4 +28,16 @@
             </customel_login>
         </events>
     </global>
+
+    <frontend>
+        <routers>
+            <ainstainer_demo>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Demo</module>
+                    <frontName>demo</frontName>
+                </args>
+            </ainstainer_demo>
+        </routers>
+    </frontend>
 </config>
