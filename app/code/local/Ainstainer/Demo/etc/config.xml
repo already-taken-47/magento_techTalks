@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <models>
+            <demo>
+                <class>Ainstainer_Demo_Model</class>
+            </demo>
+        </models>
+    </global>
+</config>
