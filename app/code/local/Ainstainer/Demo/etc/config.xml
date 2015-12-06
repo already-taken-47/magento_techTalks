@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <models>
+            <demo>
+                <class>Ainstainer_Demo_Model</class>
+            </demo>
+        </models>
+        <blocks>
+            <demo>
+                <class>Ainstainer_Demo_Block</class>
+            </demo>
+        </blocks>
+        <helpers>
+            <demo>
+                <class>Ainstainer_Demo_Helper</class>
+            </demo>
+        </helpers>
+    </global>
+</config>
