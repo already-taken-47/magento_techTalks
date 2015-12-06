@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <models>
+            <catalog>
+                <rewrite>
+                    <category>Ainstainer_Catalog_Model_Category</category>
+                </rewrite>
+            </catalog>
+        </models>
+        <!--<blocks>-->
+            <!--<catalog>-->
+                <!--<class>Ainstainer_Catalog_Block_Category</class>-->
+            <!--</catalog>-->
+        <!--</blocks>-->
+        <!--<helpers>-->
+            <!--<catalog>-->
+                <!--<class>Ainstainer_Catalog_Helper_Category</class>-->
+            <!--</catalog>-->
+        <!--</helpers>-->
+    </global>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <helpers>
+            <customer>
+                <rewrite>
+                    <data>Ainstainer_Customer_Helper_Data</data>
+                </rewrite>
+            </customer>
+        </helpers>
+    </global>
+</config>
