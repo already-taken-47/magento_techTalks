@@ -2,5 +2,5 @@
 require_once 'app/Mage.php';
 
 Mage::app();
-$product = new Ainstainer_Demo_Model_Product;
-$product->sayHello();
+$user_name = Mage::helper('contacts/data')->getUserName();
+var_dump($user_name);
