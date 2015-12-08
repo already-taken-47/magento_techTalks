@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <helpers>
+            <contacts>
+                <rewrite>
+                    <data>Ainstainer_Contacts_Helper_Data</data>
+                </rewrite>
+            </contacts>
+        </helpers>
+    </global>
+</config>
