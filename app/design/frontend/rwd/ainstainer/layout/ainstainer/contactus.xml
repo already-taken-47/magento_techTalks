@@ -1,0 +1,7 @@
+<layout>
+    <contactus_index_index>
+        <reference name="content">
+            <block type="core/template" name="contactus.view" template="ainstainer/contactus.phtml"/>
+        </reference>
+    </contactus_index_index>
+</layout>

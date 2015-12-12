@@ -1,0 +1,29 @@
+<form id="contact-us-form" action="" method="post">
+    <ul>
+        <li>
+            <label for="email">Email</label><br>
+            <input class="required-entry validate-email" type="text" name="email" id="email">
+        </li>
+        <li>
+            <label for="name">Name</label><br>
+            <input class="required-entry" type="text" name="name" id="name">
+        </li>
+        <li>
+            <label for="phone">Phone</label><br>
+            <input class="required-entry" type="text" name="phone" id="phone">
+        </li>
+        <li>
+            <label for="description">Description</label><br>
+            <textarea class="required-entry" name="description" id="description"></textarea>
+        </li>
+        <li>
+            <br>
+            <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </li>
+    </ul>
+</form>
+<script type="text/javascript">
+    //< ![CDATA[
+    var customForm = new VarienForm('contact-us-form');
+    //]]>
+</script>
