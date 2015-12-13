@@ -38,13 +38,13 @@
                     <frontName>demo</frontName>
                 </args>
             </ainstainer_demo>
-            <catalog>
-                <args>
-                    <modules>
-                        <demo before="Mage_Catalog">Ainstainer_Demo</demo>
-                    </modules>
-                </args>
-            </catalog>
+            <!--<catalog>-->
+                <!--<args>-->
+                    <!--<modules>-->
+                        <!--<demo before="Mage_Catalog">Ainstainer_Demo</demo>-->
+                    <!--</modules>-->
+                <!--</args>-->
+            <!--</catalog>-->
         </routers>
     </frontend>
 </config>
