@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Cartband_Configviewer>
+            <version>0.1.0</version>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Cartband_Configviewer>
+    </modules>
+</config>
