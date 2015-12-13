@@ -1,0 +1,19 @@
+<config>
+    <modules>
+        <Cartband_Test>
+            <version>1.0.0</version>
+        </Cartband_Test>
+    </modules>
+   
+    <frontend>
+        <routers>
+            <cartband_test>
+                <use>standard</use>
+                <args>
+                    <module>Cartband_Test</module>
+                    <frontName>testing</frontName>
+                </args>
+            </cartband_test>
+        </routers>
+    </frontend>
+</config>
