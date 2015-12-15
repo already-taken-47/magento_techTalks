@@ -14,4 +14,22 @@
             </contacts>
         </helpers>
     </global>
+    <frontend>
+        <routers>
+            <contactus>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Contacts</module>
+                    <frontName>contactus</frontName>
+                </args>
+            </contactus>
+        </routers>
+        <layout>
+            <updates>
+                <contactus>
+                    <file>ainstainer/contactus.xml</file>
+                </contactus>
+            </updates>
+        </layout>
+    </frontend>
 </config>
