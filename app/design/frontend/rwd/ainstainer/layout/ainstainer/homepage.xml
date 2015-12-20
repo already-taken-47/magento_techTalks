@@ -1,5 +1,68 @@
 <layout>
     <cms_index_index>
-        <!--<remove name="footer" />-->
+
+        <!--<action method="addCss"><stylesheet>css/styles.css</stylesheet></action>-->
+
+        <reference name="head">
+            <!--<action method="addJs">-->
+            <!--<script>homepage/slider.js</script>-->
+            <!--</action>-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/lib/owl.carousel.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/homepage/slider.js</name>
+            </action>
+
+            <action method="addCss">
+                <stylesheet>css/lib/owl.carousel.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/homepage/custom.css</stylesheet>
+            </action>
+            <!--<action method="addItem"><type>skin_css</type><name>css/lib/owl.carousel.css</name></action>-->
+        </reference>
+
+        <reference name="content">
+            <block type="homepage/homepage" name="popular_products"
+                   template="ainstainer/popular_products.phtml"/>
+        </reference>
+
     </cms_index_index>
+
+    <contacts_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>css/homepage/custom.css</stylesheet>
+            </action>
+            <block type="core/text" name="google.cdn.gmap">
+                <action method="setText">
+                    <text>
+                        <![CDATA[<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZLWGV4klfZp4MjxvXtnljM-qsxyOdzrE&libraries=places"></script>]]>
+                    </text>
+                </action>
+            </block>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/homepage/gmap.js</name>
+            </action>
+        </reference>
+
+        <reference name="content">
+            <block type="core/template" name="contact_page_map" template="ainstainer/contact_page_map.phtml"/>
+            <block type="cms/block" name="gmap_contacts" before="-">
+                <action method="setBlockId"><block_id>gmap_contacts</block_id></action>
+            </block>
+        </reference>
+
+    </contacts_index_index>
+
 </layout>

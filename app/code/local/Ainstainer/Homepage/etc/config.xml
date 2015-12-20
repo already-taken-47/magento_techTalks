@@ -5,6 +5,17 @@
             <version>1.0.0</version>
         </Ainstainer_Homepage>
     </modules>
+
+    <global>
+
+        <blocks>
+            <homepage>
+                <class>Ainstainer_Homepage_Block</class>
+            </homepage>
+        </blocks>
+
+    </global>
+
     <frontend>
         <layout>
             <updates>
@@ -14,4 +25,5 @@
             </updates>
         </layout>
     </frontend>
+
 </config>
