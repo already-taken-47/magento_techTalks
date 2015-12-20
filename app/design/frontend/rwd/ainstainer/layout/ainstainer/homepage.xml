@@ -58,9 +58,9 @@
 
         <reference name="content">
             <block type="core/template" name="contact_page_map" template="ainstainer/contact_page_map.phtml"/>
-            <block type="cms/block" name="gmap_contacts" before="-">
-                <action method="setBlockId"><block_id>gmap_contacts</block_id></action>
-            </block>
+            <!--<block type="cms/block" name="gmap_contacts" before="-">-->
+                <!--<action method="setBlockId"><block_id>gmap_contacts</block_id></action>-->
+            <!--</block>-->
         </reference>
 
     </contacts_index_index>
