@@ -1,0 +1,5 @@
+<layout>
+    <cms_index_index>
+        <!--<remove name="footer" />-->
+    </cms_index_index>
+</layout>

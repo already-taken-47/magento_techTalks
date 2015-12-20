@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ainstainer_Homepage>
+            <version>1.0.0</version>
+        </Ainstainer_Homepage>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <ainstainer_homepage>
+                    <file>ainstainer/homepage.xml</file>
+                </ainstainer_homepage>
+            </updates>
+        </layout>
+    </frontend>
+</config>
