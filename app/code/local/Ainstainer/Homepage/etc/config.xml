@@ -14,6 +14,12 @@
             </homepage>
         </blocks>
 
+        <blocks>
+            <banners>
+                <class>Ainstainer_Homepage_Block</class>
+            </banners>
+        </blocks>
+
     </global>
 
     <frontend>

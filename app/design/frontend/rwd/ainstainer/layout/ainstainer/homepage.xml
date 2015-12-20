@@ -26,6 +26,7 @@
         </reference>
 
         <reference name="content">
+            <block type="homepage/banners" name="homepage.banner" template="ainstainer/static_banners.phtml"/>
             <block type="homepage/homepage" name="popular_products"
                    template="ainstainer/popular_products.phtml"/>
         </reference>
