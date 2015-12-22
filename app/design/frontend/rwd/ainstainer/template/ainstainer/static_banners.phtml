@@ -1,0 +1,7 @@
+<div class="page-banners">
+<?php $banners_count = 0;
+foreach($this->getBanners() as $banner):
+    $banners_count++ ;?>
+    <img src="<?= $banner ?>" alt="banner_<?= $banners_count ?>">
+<?php endforeach; ?>
+</div>
