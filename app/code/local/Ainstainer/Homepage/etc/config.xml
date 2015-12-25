@@ -7,19 +7,30 @@
     </modules>
 
     <global>
-
         <blocks>
             <homepage>
                 <class>Ainstainer_Homepage_Block</class>
             </homepage>
         </blocks>
-
         <blocks>
             <banners>
                 <class>Ainstainer_Homepage_Block</class>
             </banners>
         </blocks>
-
+        <models>
+            <homepage>
+                <class>Ainstainer_Homepage_Model</class>
+                <resourceModel>homepage_resource</resourceModel>
+            </homepage>
+            <homepage_resource>
+                <class>Ainstainer_Homepage_Model_Resource</class>
+                <entities>
+                    <slider>
+                        <table>homepage_slider</table>
+                    </slider>
+                </entities>
+            </homepage_resource>
+        </models>
     </global>
 
     <frontend>
@@ -30,6 +41,15 @@
                 </ainstainer_homepage>
             </updates>
         </layout>
+        <routers>
+            <ain_homepage>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Homepage</module>
+                    <frontName>homepage</frontName>
+                </args>
+            </ain_homepage>
+        </routers>
     </frontend>
 
 </config>
