@@ -6,6 +6,7 @@ class Ainstainer_Homepage_Block_Slider extends Mage_Core_Block_Template {
         return Mage::getModel('homepage/slider')
             ->getCollection()
             ->addFieldToFilter('status', true)
+            ->setOrder('position', 'ASC')
             ->getData();
     }
 }
