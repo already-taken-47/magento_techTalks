@@ -1,5 +1,21 @@
-<div class="homepage-slider">
-<?php foreach($this->getActiveSlides() as $slide):; ?>
-    <img src="<?= $slide['url'] ?>" alt="<?= $slide['title'] ?>" />
-<?php endforeach; ?>
-</div>
+<!--<div class="homepage-slider">-->
+<?php //foreach($this->getActiveSlides() as $slide):; ?>
+<!--    <img src="--><?//= $slide['url'] ?><!--" alt="--><?//= $slide['title'] ?><!--" />-->
+<?php //endforeach; ?>
+<!--</div>-->
+<?php
+
+
+$products = Mage::getModel('catalog/product')
+    ->getCollection()
+    ->addAttributeToSelect('url_path')
+    ->addAttributeToFilter('slide_id', array('notnull' => true));
+
+$products->getSelect()
+    ->join('slider_homepage','slide_id = slider_homepage.slide_id',
+        array('url','description','title'));
+
+
+
+var_dump($products->getData());
+?>

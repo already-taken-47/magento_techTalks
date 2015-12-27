@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>0.1.0</version>
+            <version>0.1.3</version>
         </Ainstainer_Homepage>
     </modules>
     <global>
@@ -30,7 +30,7 @@
                 <class>Ainstainer_Homepage_Model_Resource</class>
                 <entities>
                     <slider>
-                        <table>homepage_slider</table>
+                        <table>slider_homepage</table>
                     </slider>
                 </entities>
             </homepage_resource>
