@@ -6,6 +6,11 @@
         </Ainstainer_Homepage>
     </modules>
     <global>
+        <helpers>
+            <slider>
+                <class>Ainstainer_Homepage_Helper</class>
+            </slider>
+        </helpers>
         <blocks>
             <homepage>
                 <class>Ainstainer_Homepage_Block</class>

@@ -7,4 +7,5 @@ class Ainstainer_Homepage_Model_Resource_Slider extends Mage_Core_Model_Resource
         $this->_init('homepage/slider', 'slide_id');
     }
 
+
 }

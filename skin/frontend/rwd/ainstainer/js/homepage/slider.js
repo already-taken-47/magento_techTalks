@@ -1,10 +1,6 @@
 jQuery(document).ready(function($) {
 
-    var page_title =  $('div.homepage-slider');
-    page_title.find('img').wrap('<div class="item"></div>');
-    page_title.wrapInner('<div class="main-page-slider">');
-
-    $('.main-page-slider').owlCarousel({
+    $('.homepage-slider').owlCarousel({
         loop: true,
         nav: false,
         lazyLoad: false,
