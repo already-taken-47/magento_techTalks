@@ -1,0 +1,5 @@
+<div class="homepage-slider">
+<?php foreach($this->getActiveSlides() as $slide):; ?>
+    <img src="<?= $slide['url'] ?>" alt="<?= $slide['title'] ?>" />
+<?php endforeach; ?>
+</div>

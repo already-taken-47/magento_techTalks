@@ -2,10 +2,9 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>1.0.0</version>
+            <version>0.1.0</version>
         </Ainstainer_Homepage>
     </modules>
-
     <global>
         <blocks>
             <homepage>
@@ -16,6 +15,11 @@
             <banners>
                 <class>Ainstainer_Homepage_Block</class>
             </banners>
+        </blocks>
+        <blocks>
+            <slider>
+                <class>Ainstainer_Homepage_Block</class>
+            </slider>
         </blocks>
         <models>
             <homepage>
@@ -31,8 +35,15 @@
                 </entities>
             </homepage_resource>
         </models>
+        <resources>
+            <slider_setup>
+                <setup>
+                    <module>Ainstainer_Homepage</module>
+                    <class>Ainstainer_Homepage_Model_Resource_Setup</class>
+                </setup>
+            </slider_setup>
+        </resources>
     </global>
-
     <frontend>
         <layout>
             <updates>
@@ -51,5 +62,4 @@
             </ain_homepage>
         </routers>
     </frontend>
-
 </config>
