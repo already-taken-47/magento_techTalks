@@ -1,0 +1,7 @@
+<layout>
+    <adminhtml_ainreviews_index>
+        <reference name="content">
+            <block type="contacts/adminhtml_ainreviews" name="aincontacts_grid" />
+        </reference>
+    </adminhtml_ainreviews_index>
+</layout>
