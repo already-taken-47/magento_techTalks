@@ -19,39 +19,37 @@ class Ainstainer_Contacts_Block_Adminhtml_Ainreviews_Grid extends Mage_Adminhtml
     protected function _prepareColumns() {
 
         $this->addColumn('id', array(
-            'header'    => 'ID',
+            'header'    => Mage::helper('ainreviews')->__('ID'),
             'align'     => 'left',
             'index'     => 'review_id',
         ));
 
-
         $this->addColumn('name', array(
-            'header'    => 'Name',
-            'align'     =>'left',
+            'header'    => Mage::helper('ainreviews')->__('Name'),
+            'align'     => 'left',
             'index'     => 'name',
         ));
 
         $this->addColumn('email', array(
-            'header'    => 'E-mail',
+            'header'    => Mage::helper('ainreviews')->__('E-mail'),
             'align'     => 'left',
             'index'     => 'email',
         ));
 
         $this->addColumn('phone', array(
-            'header'    => 'Phone',
+            'header'    => Mage::helper('ainreviews')->__('Phone'),
             'align'     => 'left',
             'index'     => 'phone',
         ));
 
         $this->addColumn('description', array(
-            'header'    => 'Description',
-            'align'     =>'right',
-            'width'     => '50px',
+            'header'    => Mage::helper('ainreviews')->__('Description'),
+            'align'     => 'right',
             'index'     => 'description',
         ));
 
         $this->addColumn('date', array(
-            'header'    => 'Created at',
+            'header'    => Mage::helper('ainreviews')->__('Created at'),
             'align'     => 'left',
             'index'     => 'timestamp',
         ));

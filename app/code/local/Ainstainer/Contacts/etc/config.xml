@@ -30,13 +30,11 @@
                 </setup>
             </ainreview_setup>
         </resources>
-
         <helpers>
             <ainreviews>
                 <class>Ainstainer_Contacts_Helper</class>
             </ainreviews>
         </helpers>
-
         <helpers>
             <contacts>
                 <rewrite>
@@ -44,13 +42,11 @@
                 </rewrite>
             </contacts>
         </helpers>
-
         <blocks>
             <ainreviews>
                 <class>Ainstainer_Contacts_Block</class>
             </ainreviews>
         </blocks>
-
     </global>
 
     <admin>

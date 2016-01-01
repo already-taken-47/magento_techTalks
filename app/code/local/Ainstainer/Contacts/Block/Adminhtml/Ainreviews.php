@@ -6,7 +6,7 @@ class Ainstainer_Contacts_Block_Adminhtml_Ainreviews extends Mage_Adminhtml_Bloc
     {
         $this->_blockGroup = 'ainreviews';
         $this->_controller = 'adminhtml_ainreviews';
-        $this->_headerText = 'text';
+        $this->_headerText = Mage::helper('ainreviews')->__('Reviews');
         parent::__construct();
     }
 }
