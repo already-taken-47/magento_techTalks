@@ -1,11 +1,40 @@
 <?xml version="1.0"?>
 <config>
+
     <modules>
         <Ainstainer_Contacts>
-            <version>1.0.0</version>
+            <version>0.0.1</version>
         </Ainstainer_Contacts>
     </modules>
+
     <global>
+        <models>
+            <aincontacts>
+                <class>Ainstainer_Contacts_Model</class>
+                <resourceModel>aincontacts_resource</resourceModel>
+            </aincontacts>
+            <aincontacts_resource>
+                <class>Ainstainer_Contacts_Model_Resource</class>
+                <entities>
+                    <ainreview>
+                        <table>ain_review</table>
+                    </ainreview>
+                </entities>
+            </aincontacts_resource>
+        </models>
+        <resources>
+            <ainreview_setup>
+                <setup>
+                    <module>Ainstainer_Contacts</module>
+                    <class>Ainstainer_Contacts_Model_Resource_Setup</class>
+                </setup>
+            </ainreview_setup>
+        </resources>
+        <helpers>
+            <ainreviews>
+                <class>Ainstainer_Contacts_Helper</class>
+            </ainreviews>
+        </helpers>
         <helpers>
             <contacts>
                 <rewrite>
@@ -13,7 +42,25 @@
                 </rewrite>
             </contacts>
         </helpers>
+        <blocks>
+            <ainreviews>
+                <class>Ainstainer_Contacts_Block</class>
+            </ainreviews>
+        </blocks>
     </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ainreviews before="Mage_Adminhtml">Ainstainer_Contacts_Adminhtml</ainreviews>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <frontend>
         <routers>
             <contactus>
@@ -32,4 +79,5 @@
             </updates>
         </layout>
     </frontend>
+
 </config>

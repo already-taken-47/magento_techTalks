@@ -4,6 +4,9 @@
         <Ainstainer_Homepage>
             <active>true</active>
             <codePool>local</codePool>
+            <depends>
+                <Mage_Shipping/>
+            </depends>
         </Ainstainer_Homepage>
     </modules>
 </config>

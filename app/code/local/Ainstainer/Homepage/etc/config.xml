@@ -2,25 +2,79 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>1.0.0</version>
+            <version>0.1.3</version>
         </Ainstainer_Homepage>
     </modules>
-
     <global>
-
+        <helpers>
+            <slider>
+                <class>Ainstainer_Homepage_Helper</class>
+            </slider>
+        </helpers>
         <blocks>
             <homepage>
                 <class>Ainstainer_Homepage_Block</class>
             </homepage>
         </blocks>
-
         <blocks>
             <banners>
                 <class>Ainstainer_Homepage_Block</class>
             </banners>
         </blocks>
+        <blocks>
+            <slider>
+                <class>Ainstainer_Homepage_Block</class>
+            </slider>
+        </blocks>
+        <models>
+            <homepage>
+                <class>Ainstainer_Homepage_Model</class>
+                <resourceModel>homepage_resource</resourceModel>
+            </homepage>
+            <homepage_resource>
+                <class>Ainstainer_Homepage_Model_Resource</class>
+                <entities>
+                    <slider>
+                        <table>slider_homepage</table>
+                    </slider>
+                </entities>
+            </homepage_resource>
+        </models>
+        <resources>
+            <slider_setup>
+                <setup>
+                    <module>Ainstainer_Homepage</module>
+                    <class>Ainstainer_Homepage_Model_Resource_Setup</class>
+                </setup>
+            </slider_setup>
+        </resources>
+
+        <models>
+            <ain_five_shipping>
+                <class>Ainstainer_Homepage_Model</class>
+            </ain_five_shipping>
+        </models>
+
+        <helpers>
+            <ain_five_shipping>
+                <class>Ainstainer_Homepage_Helper</class>
+            </ain_five_shipping>
+        </helpers>
 
     </global>
+
+    <default>
+        <carriers>
+            <ain_five_shipping>
+                <active>1</active>
+                <sallowspecific>1</sallowspecific>
+                <model>ain_five_shipping/shipping</model>
+                <name>Custom Five Dollars Shipping Method</name>
+                <price>5.00</price>
+                <title>Five dollars shipping method</title>
+            </ain_five_shipping>
+        </carriers>
+    </default>
 
     <frontend>
         <layout>
@@ -30,6 +84,14 @@
                 </ainstainer_homepage>
             </updates>
         </layout>
+        <routers>
+            <ain_homepage>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Homepage</module>
+                    <frontName>homepage</frontName>
+                </args>
+            </ain_homepage>
+        </routers>
     </frontend>
-
 </config>
