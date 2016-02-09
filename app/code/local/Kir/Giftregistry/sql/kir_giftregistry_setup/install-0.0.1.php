@@ -6,7 +6,9 @@ $installer->startSetup();
  *
  *
  */
+
 $tableName = $installer->getTable('kir_giftregistry/type');
+
 // Check if the table already exists
 if ($installer->getConnection()->isTableExists($tableName) != true) {
     $table = $installer->getConnection()
