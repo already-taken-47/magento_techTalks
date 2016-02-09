@@ -1,7 +1,7 @@
 <?php
 
 class Ainstainer_Homepage_Model_Shipping extends Mage_Shipping_Model_Carrier_Abstract
-implements Mage_Shipping_Model_Carrier_Interface
+    implements Mage_Shipping_Model_Carrier_Interface
 {
     protected $_code = 'ain_five_shipping';
 
