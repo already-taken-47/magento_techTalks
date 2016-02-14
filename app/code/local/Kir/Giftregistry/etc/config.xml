@@ -59,4 +59,22 @@
             </kir_giftregistry>
         </blocks>
     </global>
+    <frontend>
+        <routers>
+            <kir_giftregistry>
+                <use>standard</use>
+                <args>
+                    <module>Kir_Giftregistry</module>
+                    <frontName>giftregistry</frontName>
+                </args>
+            </kir_giftregistry>
+        </routers>
+        <layout>
+            <updates>
+                <kir_giftregistry module="kir_giftregistry">
+                    <file>kir/kir_giftregistry.xml</file>
+                </kir_giftregistry>
+            </updates>
+        </layout>
+    </frontend>
 </config>
