@@ -1,0 +1,33 @@
+<config>
+    <menu>
+        <ainstainer_reviews translate="title" module="ainreviews">
+            <title>Ainstainer</title>
+            <sort_order>10</sort_order>
+            <children>
+                <ainreviews module="ainreviews">
+                    <title>Reviews</title>
+                    <action>adminhtml/ainreviews</action>
+                </ainreviews>
+            </children>
+        </ainstainer_reviews>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <ainstainer_reviews>
+                        <children>
+                            <ainreviews>
+                                <title>Reviews</title>
+                                <sort_order>10</sort_order>
+                            </ainreviews>
+                        </children>
+                    </ainstainer_reviews>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

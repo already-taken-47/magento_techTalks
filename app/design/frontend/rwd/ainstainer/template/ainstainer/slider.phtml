@@ -1,0 +1,10 @@
+<div class="homepage-slider">
+<?php foreach($this->getProductsWithSlides() as $slide):;
+    $product = Mage::getModel('catalog/product')->load($slide['entity_id']) ?>
+    <div class="item">
+        <a href="<?= $product->getProductUrl() ?>">
+            <img src="<?= $slide['url'] ?>" alt="<?= $product->getName() ?>" />
+        </a>
+    </div>
+<?php endforeach; ?>
+</div>
