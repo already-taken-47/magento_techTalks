@@ -48,7 +48,34 @@
                 </setup>
             </slider_setup>
         </resources>
+
+        <models>
+            <ain_five_shipping>
+                <class>Ainstainer_Homepage_Model</class>
+            </ain_five_shipping>
+        </models>
+
+        <helpers>
+            <ain_five_shipping>
+                <class>Ainstainer_Homepage_Helper</class>
+            </ain_five_shipping>
+        </helpers>
+
     </global>
+
+    <default>
+        <carriers>
+            <ain_five_shipping>
+                <active>1</active>
+                <sallowspecific>1</sallowspecific>
+                <model>ain_five_shipping/shipping</model>
+                <name>Custom Five Dollars Shipping Method</name>
+                <price>5.00</price>
+                <title>Five dollars shipping method</title>
+            </ain_five_shipping>
+        </carriers>
+    </default>
+
     <frontend>
         <layout>
             <updates>

@@ -1,0 +1,38 @@
+<layout version="0.1.0">
+    <kir_giftregistry_index_index>
+        <reference name="content">
+            <block name="giftregistry.list" type="kir_giftregistry/list"
+                   template="kir/list.phtml" as="giftregistry_list"/>
+        </reference>
+    </kir_giftregistry_index_index>
+    <kir_giftregistry_index_new>
+        <reference name="content">
+            <block name="giftregistry.new" type="core/template"
+                   template="kir/new.phtml" as="giftregistry_new"/>
+        </reference>
+    </kir_giftregistry_index_new>
+    <kir_giftregistry_index_edit>
+        <reference name="content">
+            <block name="giftregistry.edit" type="core/template"
+                   template="kir/edit.phtml" as="giftregistry_edit"/>
+        </reference>
+    </kir_giftregistry_index_edit>
+    <kir_giftregistry_view_view>
+        <reference name="content">
+            <block name="giftregistry.view" type="core/template"
+                   template="kir/view.phtml" as="giftregistry_view"/>
+        </reference>
+    </kir_giftregistry_view_view>
+    <kir_giftregistry_search_index>
+        <reference name="content">
+            <block name="giftregistry.search" type="core/template"
+                   template="kir/search.phtml" as="giftregistry_search"/>
+        </reference>
+    </kir_giftregistry_search_index>
+    <kir_giftregistry_search_results>
+        <reference name="content">
+            <block name="giftregistry.results"
+                   type="kir_giftregistry/list" template="kir/list.phtml"/>
+        </reference>
+    </kir_giftregistry_search_results>
+</layout>

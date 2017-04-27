@@ -11,7 +11,7 @@ class Ainstainer_Contacts_Block_Adminhtml_Ainreviews_Grid extends Mage_Adminhtml
     }
 
     protected function _prepareCollection() {
-        $collection = Mage::getModel('aincontacts/ainreview')->getCollection();
+        $collection = Mage::getModel('aincontactk2s/ainreview')->getCollection();
         $this->setCollection($collection);
         return parent::_prepareCollection();
     }
